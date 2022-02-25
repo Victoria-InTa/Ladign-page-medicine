@@ -1,0 +1,275 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+img{
+    width: 100%;
+}
+
+
+/*header*/
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+}
+
+
+/*section__1*/
+
+.section__1{
+    margin: auto;
+    width: 60%;
+    margin-top: 5rem;
+    box-shadow: 5px 5px 5px 1px rgb(185, 185, 185);
+}
+
+/*section__2*/
+
+.section__2{
+    text-align: center;
+    margin-top: 5rem;
+}
+
+.box1{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: right;
+    
+}
+.box__img1{
+    width: 400px;
+    border-left: 1px solid black;
+    object-fit: cover;
+}
+.box__text1{
+    text-align: right;
+    width: 400px;
+    padding-top: 2rem;
+}
+
+.box2{
+    margin-top: 4rem;
+    display: flex;
+    gap: 2rem;
+    justify-content: left; 
+}
+.box__img2{
+    width: 400px;
+    border-right: 1px solid black;
+    height: 400px;
+    object-fit: cover;
+}
+.box__text2{
+    padding-top: 2rem;
+    text-align: left;
+    width: 400px;
+    overflow: hidden;
+}
+.box-text__p{
+    color: rgb(65, 65, 65);
+
+}
+
+/*footer*/
+.footer{
+    height: 500px;
+    background-color: rgb(194, 225, 240);
+    display: flex;
+    justify-content: end;
+    align-items: flex-end;
+    clip-path: polygon(50% 64%, 78% 59%, 100% 59%, 100% 100%, 0 100%, 0 76%, 13% 74%);
+}
+.ul-footer{
+
+    display: flex;
+    gap: 5rem;
+    list-style: none;
+    margin-bottom: 5rem;
+    margin-right: 5rem;
+}
+.a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(102, 102, 102);
+}
+.list:hover{
+    border-bottom: 3px solid orange;
+    transition: all .2s;
+    color: rgb(102, 102, 102);
+}
+
+@media only screen and (max-width: 425px){
+    .footer{
+        width: 470px;
+        margin-top: 5rem;
+        height: 200px;
+        clip-path: none;
+        display: flex;
+        justify-content: center;
+    }
+    .ul-footer{
+        margin-bottom: 1rem;
+        gap: 1rem;
+        flex-direction: column;
+    }
+    .list{
+        width: 170px;
+    }
+}
+
+
+
+/*wasap icono*/
+.main{
+    position: relative;
+}
+.wasap{
+    bottom: 10rem;
+    left: 2rem;
+    position: fixed; 
+}
+.i{
+   font-size: 3rem;
+   cursor: pointer;
+   color: white;
+   background-color: green;
+   border-radius: 50px;
+}
+
+
+
+
+
+@media only screen and (max-width: 425px){
+    /*section__2*/
+    .box1{
+       display: block;
+    }
+    .box__img1{
+        padding-top: 2rem;
+        border-top: 3px dotted rgb(233, 213, 170);
+    }
+    .box__text1{
+        padding-right: 2rem;
+        padding-bottom: 2rem;
+    }
+    .box2{
+        display: block;
+     }
+    .box__img2{
+        border-right: none;
+        border-top: 3px dotted rgb(233, 213, 170);
+         
+     }
+    .box__text2{
+        padding-left: 2rem;
+        border-bottom: 3px dotted rgb(233, 213, 170);
+     }
+     /*header*/
+     .nav{
+        width: 450px;
+    }
+    .section__1{
+        margin-left: 2.5rem;
+        width: 100%;
+        
+    }
+}
+
+
+@media only screen and (min-width: 2560px){
+    /*header*/
+.logo{
+    width: 50px;
+    height: 50px;
+    margin-left: 2rem;
+}
+
+
+/*section__1*/
+
+.section__1{
+    margin: auto;
+    width: 60%;
+    margin-top: 5rem;
+    box-shadow: 5px 5px 5px 1px rgb(185, 185, 185);
+}
+
+/*section__2*/
+
+.section__2{
+    margin:4rem auto ;
+    width: 1000px;
+}
+
+
+}
+
+
+
+/*contact*/
+
+.section__3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 5rem;
+}
+.contact-h1{
+    color: rgb(82, 82, 82);
+}
+.form{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 3rem;
+    border: 1px solid grey;
+    width: 30%;
+    height: 400px;
+    padding: 2rem;
+    
+    justify-content: center;
+}
+.input-text, .input-email{
+    padding-left: 1rem;
+    border-radius: 5px;
+    height: 40px;
+    background-color: transparent;
+    border: none;
+    color: grey;
+    border-bottom: 2px solid grey;
+}
+.input-textarea{
+    padding-left: 1rem;
+    border: none;
+    color: grey;
+    border-bottom: 2px solid grey;
+    background-color: transparent;
+}
+.btn{
+    border-radius: 5px;
+    border: 3px solid rgb(182, 224, 195);
+    background-color: rgb(137, 216, 137);
+    color: white;
+    font-size: 1.2rem;
+    width: 100px;
+    margin: auto;
+}
+
+@media only screen and (max-width: 1024px){
+    .form{
+        width: 60%;
+    }
+}
+
+@media only screen and (max-width: 425px){
+    .contact-h1{
+        text-align: center;
+    }
+    .form{
+        width: 80%;
+        margin: auto;
+    }
+}
